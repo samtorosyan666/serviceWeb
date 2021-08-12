@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="serviceWeb:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>serviceWeb</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="serviceWeb-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="serviceWeb:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="library" level="application" name="all" />
+          <element id="library" level="application" name="bootstrap" />
+          <element id="library" level="application" name="jquery" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
